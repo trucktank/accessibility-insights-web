@@ -1,21 +1,27 @@
 {
-    "name": "accessibility-insights-report",
-    "version": "1.0.0",
-    "description": "Accessibility Insights Report",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Microsoft/accessibility-insights-web"
-    },
-    "dependencies": {
-        "axe-core": "3.3.2",
-        "classnames": "^2.2.6",
-        "lodash": "^4.17.15",
-        "moment": "^2.24.0",
-        "office-ui-fabric-react": "7.93.0",
-        "react": "^16.12.0",
-        "react-dom": "^16.12.0",
-        "react-helmet": "^5.2.0",
-        "uuid": "^3.4.0"
-    }
+  "name": "accessibility-insights-report",
+  "version": "1.0.0",
+  "description": "Accessibility Insights Report",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/accessibility-insights-web"
+  },
+  "dependencies": {
+    "axe-core": "3.3.2",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "office-ui-fabric-react": "7.93.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.0",
+    "uuid": "^3.4.0",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
